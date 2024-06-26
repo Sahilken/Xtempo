@@ -6,24 +6,17 @@ import {
   IsString,
   MaxLength,
 } from 'class-validator';
-import { Date } from 'mongoose';
 
 export class createUserDto {
   @IsString()
   @MaxLength(30)
-  readonly name: string;
+  Title: string;
   @IsNumber()
   @IsNotEmpty()
-  readonly age: number;
+  price: number;
+  @IsString()
+  ageGroup: string;
   @IsString()
   @IsNotEmpty()
-  readonly email: string;
-  @IsString()
-  @IsNotEmpty()
-  readonly password: string;
-  @IsNumber()
-  @IsNotEmpty()
-  readonly mobile: string;
-  @IsString()
-  readonly token: string;
+  type: string;
 }

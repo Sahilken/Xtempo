@@ -21,7 +21,7 @@ class days extends Document {
 
 export class event {
   @Prop({ required: true })
-  eventTitle: String;
+  Title: String;
 
   @Prop()
   schedule: Array<days>;

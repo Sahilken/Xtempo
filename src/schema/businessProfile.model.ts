@@ -65,7 +65,7 @@ class event extends Document {
 @Schema()
 export class businessProfile {
   @Prop()
-  name: String;
+  title: String;
   @Prop()
   bio: String;
   @Prop({ type: subscription })

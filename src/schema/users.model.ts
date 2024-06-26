@@ -25,7 +25,6 @@ export class user {
     ref: 'BusinessProfile',
   })
   businessProfiles: mongoose.Types.ObjectId[];
-
   @Prop({ default: Date.now })
   created_at: Date;
 }
